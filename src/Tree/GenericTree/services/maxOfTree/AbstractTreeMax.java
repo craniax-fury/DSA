@@ -7,9 +7,9 @@ public abstract class AbstractTreeMax<T> {
 
     public int max(Node<Integer> node){
         for (Node<Integer> child:node.getChildren()) {
-            max(child);
-            max = Math.max(max,child.getData());
+
+            max = Math.max(max,max(child));
         }
-        return max;
+        return Math.max(max,node.getData());
     }
 }

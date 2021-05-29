@@ -46,7 +46,7 @@ public class TreeClient {
 
         while (true) {
             System.out.println();
-            System.out.println("1.Display Tree 2.Size Of tree 3.Height of tree 4.Max of tree 5.Traversal 6. Mirror 7.Without Leaves 8.Linearize 9.View 10.exit");
+            System.out.println("1.Display Tree 2.Size Of tree 3.Height of tree 4.Max of tree 5.Traversal 6. Mirror 7.Without Leaves 8.Linearize 9.View 10.reset Tree 11.exit");
             System.out.println();
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
@@ -95,6 +95,9 @@ public class TreeClient {
                     break;
 
                 case 10:
+                        root = constructTree.apply(input);
+                    break;
+                case 11:
                     System.exit(0);
 
                 case 5:
