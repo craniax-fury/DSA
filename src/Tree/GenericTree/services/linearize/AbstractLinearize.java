@@ -26,7 +26,7 @@ public abstract class AbstractLinearize<T> {
 
 
     // Above approach is working in order of n^2
-    // As after we have iterated for all linerizing, we agin iterate to get tail
+    // As after we have iterated all elements for linerizing, we again iterate to get tail
     // Below is a more efficient approach , where we expect linearize method to linerarize the tree
     // as well as return the tail, this way our program would take only 0(n)
 
