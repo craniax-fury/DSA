@@ -21,7 +21,7 @@ public class TreeClient {
     public static void main(String[] args) {
 
         //input 1
-        int[] input = new int[]{10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 180, -1, 90, -1, -1, 40, 100, -1, -1, -1};
+        int[] input = new int[]{10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 180, -1, 90, -1, -1, 400, 100, -1, -1, -1};
         // Creating tree with input1
         final Function<int[], Node<Integer>> constructTree = AbstractConstructor::construct;
         Node<Integer> root = constructTree.apply(input);
